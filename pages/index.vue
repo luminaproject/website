@@ -32,7 +32,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../node_modules/cepheus/sass/cepheus';
+@import 'node_modules/normalize-scss/sass/normalize/import-now';
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -42,7 +45,8 @@ export default {
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
   font-size: 100px;

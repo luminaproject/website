@@ -9,9 +9,11 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "pretty-quick --staged"
   },
   "dependencies": {
+    "cepheus": "^1.0.1",
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
@@ -19,9 +21,13 @@
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.0.0",
     "husky": "^0.14.3",
+    "node-sass": "^4.7.2",
+    "normalize-scss": "^7.0.1",
     "prettier": "^1.10.2",
-    "pretty-quick": "^1.2.3"
+    "pretty-quick": "^1.2.3",
+    "sass-loader": "^6.0.6"
   }
 }
