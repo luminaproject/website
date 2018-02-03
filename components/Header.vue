@@ -1,14 +1,11 @@
-<template lang="html">
-  <div class="f4 white">
-    {{ text }}
+<template>
+  <div>
+    <div class="f3 mid-gray">{{ text }}</div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {}
-  },
   props: {
     text: {
       type: String,
@@ -17,6 +14,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css">
-</style>
