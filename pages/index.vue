@@ -1,33 +1,20 @@
 <template>
   <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        website
-      </h1>
-      <h2 class="subtitle">
-        Lumina website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+    <div class="header-container">
+      <div class="pt5 pl3">
+        <Header text="Meet Lumina"/>
+        <Header text="Lorem Ipsum dolor sit amet bhbashdbhasd bhasbdasn ahsbd cbahsdb"/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import Header from '~/components/Header.vue'
 
 export default {
   components: {
-    AppLogo
+    Header
   }
 }
 </script>
@@ -35,13 +22,17 @@ export default {
 <style lang="scss" scoped>
 @import '../node_modules/cepheus/sass/cepheus';
 @import 'node_modules/normalize-scss/sass/normalize/import-now';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .container {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: 'Open Sans', serif;
+  .header-container {
+    height: 100vh;
+    background: url('https://i.imgur.com/azFkTZb.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .title {
